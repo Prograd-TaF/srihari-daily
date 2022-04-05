@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+.flexbox1{
+    display:flex;
+    background-color:sienna;
+    padding:10;
+    height:4cm;
+    justify-content: center;
+    
+    
+}
+.flexbox2{
+    display: flex;
+    background-color: violet;
+    padding:5;
+    height:7cm;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.flexbox3{
+    display: flex;
+    background-color:sienna;
+    padding:5;
+    height:4cm;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+.prices,.bill{
+    background-image: url("assets/list_template.png");
+    background-size: cover;
+    width:250px;
+    height:250px;
+    text-align: center;
+    
+
+}
+.cake{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#layer1{
+    width: 245px;
+    visibility: hidden; 
+    height:50px;
+    background-color: black;
+
+}
+
+#layer2{
+    width: 200px;
+    left: 40px;
+    visibility: hidden; 
+    height:50px;
+    background-color: pink;
+}
+
+#layer3{
+    width: 160px;
+    left: 60px;
+    visibility: hidden;
+    height:50px;
+    background-color: yellow;
+}
+
+#layer4{
+    width: 120px;
+    left: 80px;
+    visibility: hidden;
+    height:50px;
+    background-color:white;
+}
+
+#layer5{
+    width: 80px;
+    left: 100px;
+    visibility: hidden;
+    height:50px;
+    background-color:red ;
+}
+
+/* Fill your code*/
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <button onclick="fetchData()">Fetch</button>
+    <button onclick="fetchsingledata()">Fetchsingle</button>
+    <button onclick="postData()">post</button>
+    <button onclick="putData()">put</button>
+    <button onclick="deleteData()">delete</button>
+    <p id="result"></p>
+    <script>
+        function fetchData(){
+          axios.get('https://62380c980a54d2ceab6ff998.mockapi.io/user')
+            .then(res=>{
+                console.log(res)
+                res.data.map(ele=>{
+                    document.querySelector('#result').innerHTML+=ele.name+'<br>'
+                })
+
+            })
+            .catch(err=>console.log(err))
+        }
+        function fetchsingledata(){
+            axios.get('https://62380c980a54d2ceab6ff998.mockapi.io/user',{params:{id:3}})
+            .then(res=>{console.log(res)})
+            .catch(err=>console.log(err))
+        }
+        function postData(){
+            axios.post('https://62380c980a54d2ceab6ff998.mockapi.io/user',{name:'srihari'})
+            .then(res=>{console.log(res)})
+            .catch(err=>console.log(err))
+        }
+        function putData(){
+            axios.put('https://62380c980a54d2ceab6ff998.mockapi.io/user',{name:'sri'})
+            .then(res=>{console.log(res)})
+            .catch(err=>console.log(err))
+        }
+        function deleteData(){
+            axios.delete('https://62380c980a54d2ceab6ff998.mockapi.io/user')
+            .then(res=>{console.log(res)})
+            .catch(err=>console.log(err))
+        }
+
+    </script>
+</body>
+</html>

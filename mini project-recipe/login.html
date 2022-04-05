@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Document</title>
+</head>
+<body id="back">
+    <br>
+    <br>
+    <h2 style="color:white">Welcome To Recipe</h2>
+    
+    <img id="image2" src="https://www.kindpng.com/picc/m/192-1925162_login-icon-png-transparent-png.png" alt="login icon">
+    <br>
+    <!--<button id="signup" type="submit" onclick="signup()">signup</button>
+    <button id="login" type="submit" onclick="login()">login</button>-->
+    <form id="log" action="index.html" onsubmit="return check()" >
+        
+        <h3>Enter login details</h3>
+        <br>
+        <br>
+        <input id="uname" type="text" placeholder="username">
+        <input id="pass" type="password" placeholder="password">
+        <br>
+        <br>
+        <button id="enter" type="submit" style="color:white">login</button>
+        
+        
+    </form>
+    
+    <form id="redirect" action="signup.html">
+        <strong>Don't have an account?then signup</strong>
+        <br>
+        <button style="color:white" id="green">signup</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

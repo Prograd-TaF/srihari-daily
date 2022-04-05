@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js%22%3E%3C/script%3E"></script>
+    <button onclick="fetchData()">Fetch</button>
+    <button onclick="fetchsingledata()">Single Data</button>
+    <button onclick="postData()">POst</button>
+    <button onclick="putdata()">Put</button>
+    <button onclick="deletedata()">Delete</button>
+    <p id="result"></p>
+
+    <script>
+        function fetchData(){
+            axios.get('https://62380a6c0a54d2ceab6fdc2f.mockapi.io/Sample')
+            .then(res=>{
+                console.log(res);
+                res.data.map(ele=>{
+                    document.querySelector('#result').innerHTML+=ele.name+'<br>'
+                })
+            })
+            .catch(err=>console.log(err))
+        }

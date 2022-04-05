@@ -1,0 +1,16 @@
+.flexboxs{
+    border:3px solid black;
+    padding:10;
+    display:flex;
+    background-color: aqua;
+    flex-direction: column;
+}
+.flexboxes div{
+    display: flex;
+    color: blue;
+    padding: 10;
+}
+#enter{
+    text-align: center;
+    color:red;
+}

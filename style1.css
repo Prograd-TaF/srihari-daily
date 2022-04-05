@@ -1,0 +1,46 @@
+/*h1{
+    color:brown;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10;
+}
+header{
+    color:darkorange;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 10;
+}
+.sa{
+    padding-bottom: 10;
+    text-align: left;
+}
+.as{
+    padding: 20;
+    text-align: center;
+    
+    border-radius: 20px;
+    border:3px dashed red;
+    background-color:aqua;
+}
+.event:hover{
+    color:rgba(200,0,0,0.8);
+}
+body{
+    background-color:rgba(40, 115, 200, 0.685);
+}
+#par{
+    font-weight: bolder;
+    font-variant-caps:all-petite-caps;
+    color:darkgoldenrod;
+}*/
+.box-1{
+    width:500px;
+    background-color: aquamarine;
+    font-size:50px;
+    font-family: cursive;
+    padding: 5px;
+    border:3px solid black;
+    margin:10px 10px 10px 10px;
+    box-sizing: border-box;
+}
