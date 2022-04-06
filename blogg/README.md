@@ -1,2 +1,0 @@
-# blogg
-Simple Frontend
