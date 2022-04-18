@@ -172,10 +172,10 @@ const client=await mongoClient.connect(dburl);
     try{
         let db=await client.db('db4');
         let user=await db.collection('user').insertOne(obj);
-        fs.writeFileSync('./companydata.json',JSON.stringify(obj))
+        //fs.writeFileSync('./companydata.json',JSON.stringify(obj))
         res.json({
             message:'data sent',
-            obj
+            
         })
     }
     catch(err){

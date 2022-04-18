@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+      <strong id="Recipe">Recipe</strong>
+      <nav id="navbar" class="mynavbar">
+      <button id="Home" onclick="parent.location='index.html'">Home</button>
+      <button id="Logout" onclick="parent.location='login.html'">Logout</button>
+      <button id="review" onclick="document.getElementById('popup1').style.display='block';">REVIEW</button>
+      </nav>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///8jHyAgHB0OBQgMAAWlpKQpJSaenZ309PUAAAAIAAD8/Pz5+fna2tqop6dvbW1oZmevrq4tKivFxMQYExRiYGC+vr7Dc4WrAAABB0lEQVR4nO3cS3LCMBAFQGIIIBPbhN/9jxqSyiIsTUnlydB9g1eSNV5MvdUKAAAAAAAAAAAAAAAAXtEwvscwDk3yHabSb2Loy/TRIOHUv8XRH+sHHMrSqR6U+hd1jHSE90P8lHC2/Lc0/0vzMy3WMdynxaFBwu+Jv4uh0cQHAAAAAAAAAIB59jG0ijdcT9sYTtcmK0PncumiuJRz/YD7bbf0ut4f3br+GvQt2PblrXrC3WbpUA/6sXrC/GeY/zvM/5aGmofHZiu0S//M/GoVDwAAAAAAAAAAZsjeuRerN1HL7hPy95fm76DNnzD/Lc3/0rxAJ3v+Xn0AAAAAAAAAAAAAAAD4T74AYhs1O+vt3ioAAAAASUVORK5CYII=" id="menu"  class="menubar" onclick="togglemenu()">
+    </div>
+    <div class="bodys">
+        <div><h3>Looking For A Recipe</h3></div>
+        <input type="text" id="dish" placeholder="why late search here..." />
+        <button id="get" >submit</button>
+    </div>
+    <div id="recipedes">
+         
+    </div>
+    <div id="popup1" class="popup1">
+        <div id="data" class="data">
+          <form id="app" class="app" action=" ">
+              <h2>Did you like the app?</h2>
+              <br>
+              <input type="radio" name="Yes" onclick=like()>Yes
+              <br>
+              <input type="radio" name="NO" onclick=dislike() >NO
+              <br>
+              <input type="radio" name="NOT SURE">NOT SURE
+              
+          </form> 
+          <a class="close" title="close" onclick="document.getElementById('popup1').style.display='none';">X</a> 
+        </div>
+
+    </div>
+    <div id="popup2" class="popup2">
+        <div id="yes" class="data">
+          <form id="reason" class="app" action=" ">
+              <h2>why you like the app?</h2>
+              <br>
+              <input type="radio" name="GOOD UI" onclick=userInfo()>GOOD UI
+              <br>
+              <input type="radio" name="QUALITY CONTENT" onclick=userInfo()>QUALITY CONTENT
+              <br>
+              <input type="radio" name="NOT SURE" onclick=userInfo()>NOT SURE
+              
+          </form> 
+          <a class="close" title="close" onclick="document.getElementById('popup2').style.display='none';">X</a> 
+        </div>
+
+    </div>
+    <div id="popup3" class="popup2">
+        <div id="NO" class="data">
+          <form id="reason" class="app" action=" ">
+              <h2>We are sorry to hear that,may i know the reason for your dislike?</h2>
+              <br>
+              <input type="radio" name="BAD UI" onclick=userInfo()>BAD UI
+              <br>
+              <input type="radio" name="OUTDATED CONTENT" onclick=userInfo()>OUTDATED CONTENT
+              <br>
+              <input type="radio" name="NOT SURE" onclick=userInfo()>NOT SURE
+              
+          </form> 
+          <a class="close" title="close" onclick="document.getElementById('popup3').style.display='none';">X</a> 
+        </div>
+
+    </div>
+    <div id="popup4" class="popup4">
+        <div id="details" class="data">
+          <form id="feedback" class="app"   action="" onsubmit="return removeall()">
+              <h2>please give your valuable feedback to improve app</h2>
+              <br>
+              NAME:<input type="text" name="name" id="fname" value="">
+              <br>
+              EMAIL:<input type="text" name="email" id="femail" value="">
+              <br>
+              FEEDBACK:<input type="text" name="feedback" id="FEEDBACK" value="">
+              <br>
+              <button id="submit" type="button" style="color:red" >submit</button>
+          </form> 
+          <a class="close" title="close" onclick="document.getElementById('popup4').style.display='none';">X</a> 
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
